@@ -1,0 +1,5 @@
+flask
+easyocr
+pillow
+deep-translator
+gunicorn
