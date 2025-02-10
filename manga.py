@@ -8,6 +8,10 @@ app = Flask(__name__)
 
 # Load API Key from environment variables (set this in Render)
 DEEPL_API_KEY = os.getenv("DEEPL_API_KEY")
+S
+@app.route("/")
+def home():
+    return jsonify({"message": "Manga Translator API is running!"})
 
 @app.route("/translate", methods=["POST"])
 def translate():
